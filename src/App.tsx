@@ -1,12 +1,15 @@
-import React from 'react'; // import React library
+import React from 'react';
+import { Routes, Route} from 'react-router-dom';
 import './App.css';
+import MyComponent from './components/MyComponent/MyComponent';
 
-const App = () => {
+
+const Home = () => {
   return (
     <div className="App">
       <header className="App-header">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          ABOUT PAGE HERE
         </p>
         <a
           className="App-link"
@@ -18,6 +21,26 @@ const App = () => {
         </a>
       </header>
     </div>
+  );
+}
+
+const About = () => {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p>
+          This is the about page.
+        </p>
+      </header>
+    </div>
+  );
+}
+const App = () => {
+  return (
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+      </Routes>
   );
 }
 
