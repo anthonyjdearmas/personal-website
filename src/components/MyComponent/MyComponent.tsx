@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
-import { MyComponentWrapper } from './MyComponent.styled';
+
 
 interface MyComponentProps {}
 
 const MyComponent: FC<MyComponentProps> = () => (
- <MyComponentWrapper data-testid="MyComponent">
+  <div data-testid="MyComponent">
     MyComponent Component
- </MyComponentWrapper>
+  </div>
 );
 
 export default MyComponent;
