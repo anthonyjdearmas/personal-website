@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import './custom_navbar.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Col, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 interface CustomNavbarProps {}
 
@@ -17,17 +17,17 @@ const CustomNavbar: FC<CustomNavbarProps> = () => (
   <Navbar.Collapse id="navbarTogglerDemo02">
     <Nav className="ms-auto" id="nav_bundle">
       <Nav.Item className="active">
-        <Nav.Link className="scroll home" href="#homepage" id="nav-link1">
+        <Nav.Link as={Link} to="/home" id="nav-link1">
           Home
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link className="scroll about" href="#aboutme" id="nav-link2">
+        <Nav.Link as={Link} to="/about" id="nav-link2">
           About Me
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link onClick={() => window.location.href='/projects'} id="nav-link3">
+        <Nav.Link as={Link} to="/projects" id="nav-link3">
           Projects
         </Nav.Link>
       </Nav.Item>
