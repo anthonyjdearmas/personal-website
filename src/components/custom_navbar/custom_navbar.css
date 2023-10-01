@@ -1,5 +1,4 @@
-/* Navigation Bar */
-#navbar_title {
+  #navbar_title {
     animation-name: fade;
     animation-duration: 0.5s;
     font-family: 'Abel', cursive;
@@ -20,19 +19,23 @@
   
   #nav-link1{
     animation-delay: 0.125s;
+    color: whitesmoke;
   }
   
   #nav-link2{
     animation-delay: 0.25s;
+    color: whitesmoke;
   }
   
   #nav-link3{
     animation-delay: 0.5s;
+    color: whitesmoke;
   
   }
   
   #nav-link4{
     animation-delay: 0.75s;
+    color: whitesmoke;
   }
   
   #mainNav .navbar-nav .nav-item .nav-link {
