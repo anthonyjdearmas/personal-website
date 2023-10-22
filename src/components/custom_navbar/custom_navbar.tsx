@@ -6,7 +6,7 @@ import './custom_navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
-interface CustomNavbarProps {}
+interface CustomNavbarProps { }
 
 const CustomNavbar: FC<CustomNavbarProps> = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -16,7 +16,7 @@ const CustomNavbar: FC<CustomNavbarProps> = () => {
   };
 
   return (
-    <Navbar expand="lg" bg="primary" variant="dark">
+    <Navbar expand="lg" variant="dark" id="navbar_bg">
       <Navbar.Brand href="index.html">
         <h1 id="navbar_title"><strong>Anthony DeArmas</strong></h1>
       </Navbar.Brand>
