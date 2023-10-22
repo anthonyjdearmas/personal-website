@@ -1,0 +1,42 @@
+.container {
+    color: whitesmoke;
+}
+
+#intro_title {
+    font-family: 'Abel', cursive;
+    font-weight: 800;
+    margin-right: 250px;
+}
+
+#intro_text {
+    font-family: 'Abel', cursive;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-left: 25px;
+}
+
+#intro_img {
+    position: absolute;
+    height: 500px;
+    width: 800px;
+    margin-right: 20%;
+    border: 1px solid #043a64bd;
+    border-radius: 10px;
+    box-shadow: 5px 0 10px -2px #000000;
+    float: right;
+    padding-left: 0px;
+    padding-right: 0px;
+    right: 0;
+}
+
+#textbox {
+    background-color: #174c74c7;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 5%;
+    height: 350px;
+    width: 450px;
+    z-index: 1;
+}
