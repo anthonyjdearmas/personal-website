@@ -18,7 +18,7 @@
 #intro_img {
     position: absolute;
     height: 500px;
-    width: 800px;
+    width: 700px;
     margin-right: 20%;
     border: 1px solid #043a64bd;
     border-radius: 10px;
@@ -34,9 +34,30 @@
     border-radius: 10px;
     padding: 10px;
     position: absolute;
-    margin-left: 2%;
+    margin-left: 5%;
     margin-top: 5%;
     height: 350px;
-    width: 450px;
+    width: 500px;
     z-index: 1;
+}
+
+#icon-git {
+    height: 44px;
+    width: 40px;
+    filter: invert(100%);
+    z-index: 3;
+}
+
+#icon-lnki {
+    height: 48px;
+    width: 40px;
+    filter: invert(100%);
+    z-index: 3;
+}
+
+#icon-res {
+    height: 40px;
+    width: 32px;
+    filter: invert(100%);
+    z-index: 3;
 }

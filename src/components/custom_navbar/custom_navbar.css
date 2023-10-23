@@ -44,6 +44,7 @@
   .navbar-nav .nav-item.active .nav-link {
     color: #3b97dd;
     background-color: rgba(209, 209, 209, 0.100);
+    border-radius: 3px;
   }
 
   .navbar-dark .nav-item .nav-link {
@@ -57,6 +58,7 @@
 
   .navbar-dark .nav-item:hover .nav-link {
     background-color: rgba(209, 209, 209, 0.100);
+    border-radius: 3px;
   }
 
   @keyframes fade {

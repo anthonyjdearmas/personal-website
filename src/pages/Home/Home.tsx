@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import './Home.css';
 
-
 interface HomeProps { }
 
 const Home: FC<HomeProps> = () => (
@@ -17,9 +16,24 @@ const Home: FC<HomeProps> = () => (
             and artifical intellgience. Below you can find links
             to my Github, LinkedIn, and resume.
           </p>
+          <div className="container text-center" style={{ height: '100px' }}>
+            <div className="row">
+              <div>
+                <a href="https://github.com/anthonyjdearmas" target="_blank">
+                  <img id="icon-git" className="img-fluid mt-3 icon" src="img/icons/github.png" alt="GitHub Icon" />
+                </a>
+                <a href="https://www.linkedin.com/in/ajd249/" target="_blank">
+                  <img id="icon-lnki" className="img-fluid mt-3 icon" src="img/icons/linkedin.png" alt="LinkedIn Icon" />
+                </a>
+                <a href="pdf/cs_newresume.pdf" target="_blank">
+                  <img id="icon-res" className="img-fluid mt-3 icon" src="img/icons/resume.png" alt="Resume Icon" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+        <img src="/img/intro.jpg" alt="Intro" id="intro_img" />
       </div>
-      <img src="/img/intro.jpg" alt="Image" id="intro_img" />
     </div>
   </div>
 );
