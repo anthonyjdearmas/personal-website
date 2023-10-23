@@ -30,7 +30,9 @@
 }
 
 #textbox {
-    background-color: #174c74c7;
+    background-color: #2e2933ec;
+    border: 1px solid #043a64bd;
+    box-shadow: -1px 0 8px -2px #000000;
     border-radius: 10px;
     padding: 10px;
     position: absolute;
