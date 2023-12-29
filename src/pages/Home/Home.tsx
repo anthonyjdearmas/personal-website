@@ -43,11 +43,17 @@ const Home: FC<HomeProps> = () => (
 
     <div className="container mb-5" id="about_me">
       <div className="row">
-        <div className="col-6">
+        <div className="col-sm-12 col-lg-5">
           <img src="/img/abpic.jpg" alt="About" id="about_img" className="img-fluid rounded" />
         </div>
-        <div className="col-6">
-          <h2 className="text-center mt-5 mb-5">About me</h2>
+        <div className="col-sm-12 col-lg-7" id="about_me_text">
+          <h1 className="text-center mt-3">About me</h1>
+          <hr />
+          <p>
+            I'm a software engineer based in New York City. I enjoy creating web applications that are both intuitive and efficient.
+            I have experience with JavaScript, TypeScript, React, Node.js, Express.js, PostgreSQL.
+            I'm always looking to learn new technologies and improve my skills as a developer.
+          </p>
         </div>
       </div>
     </div>

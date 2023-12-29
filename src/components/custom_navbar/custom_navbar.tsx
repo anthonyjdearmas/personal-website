@@ -2,6 +2,7 @@ import React, { FC, useState, useRef } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './custom_navbar.css';
+import { useNavigate } from 'react-router-dom'; // version 5.2.0
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
@@ -11,27 +12,42 @@ interface CustomNavbarProps { }
 const CustomNavbar: FC<CustomNavbarProps> = () => {
   const [activeLink, setActiveLink] = useState('home');
   const aboutRef = useRef<HTMLDivElement>(null);
-  let onAboutMe = false;
+
+
+  const navigate = useNavigate();
 
   const handleLinkClick = (link: string) => {
     setActiveLink(link);
-    if (link === 'about' && aboutRef.current) {
-      window.scrollTo({
-        top: document.documentElement.scrollHeight,
-        behavior: 'smooth',
-      });
-      onAboutMe = true;
-    } else {
-      onAboutMe = false;
-    }
+    const isHome = window.location.pathname === '/';
 
-    if (link === 'home' && !onAboutMe) {
+    if (link === 'about') {
+      if (isHome) {
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: 'smooth',
+        });
+      } else {
+        navigate('/#about_me');
+        setTimeout(() => {
+          window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth',
+          });
+        }, 1);
+      }
+    } else if (link === 'home') {
+      if (!isHome) {
+        navigate('/');
+      }
       window.scrollTo({
         top: 0,
         behavior: 'smooth',
       });
+    } else {
+      navigate('/projects');
     }
   };
+
 
   return (
     <Navbar expand="lg" variant="dark" id="navbar_bg" style={{ position: 'sticky', top: 0, zIndex: 100 }}>
