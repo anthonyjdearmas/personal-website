@@ -1,5 +1,7 @@
   #navbar_bg {
     background-image: radial-gradient(circle, #2e2933 0%, #1E1922 100%);
+    /* add shadow underneath */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   }
 
   #navbar_title {

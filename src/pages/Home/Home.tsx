@@ -7,14 +7,13 @@ const Home: FC<HomeProps> = () => (
   <div className="container">
     <div className="row mt-5">
       <div className="col-6">
-        <div id="textbox" className="p-5 rounded">
+        <div id="textbox" className="p-3 rounded">
           <h2 id="intro_title">Welcome,</h2>
           <p id="intro_text">
-            My name is Anthony DeArmas. I made this website,
-            so you can learn more about me and my projects. I am
-            interested in creating web applications, databases
-            and artifical intellgience. Below you can find links
-            to my Github, LinkedIn, and resume.
+            My name is Anthony DeArmas and I'm a full stack software engineer based in New York City.
+            I'm passionate about creating web applications that is both intuitive and efficient.
+            Here you can find some of my projects and learn more about me. Click the icons below to
+            visit my GitHub and LinkedIn profiles, or click the resume icon to view my resume.
           </p>
           <div className="container text-center" style={{ height: '100px' }}>
             <div className="row">
