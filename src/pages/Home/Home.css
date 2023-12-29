@@ -65,3 +65,32 @@
     filter: invert(100%);
     z-index: 3;
 }
+
+#intro_section {
+    height: 80vh;
+}
+
+#about_me {
+    background-color: #2e2933d3;
+    border: 1px solid #043a64bd;
+    box-shadow: -1px 0 8px -2px #000000;
+    border-radius: 10px;
+}
+
+#about_img {
+    width: 450px;
+    border: 1px solid #043a64bd;
+    border-radius: 10px;
+    box-shadow: 5px 0 10px -2px #000000;
+    float: left;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* if screen is less than 1400px wide */
+@media only screen and (max-width: 1400px) {
+    #intro_img {
+        display: none;
+    }
+}
