@@ -11,7 +11,7 @@ interface CustomNavbarProps { }
 
 const CustomNavbar: FC<CustomNavbarProps> = () => {
   const [activeLink, setActiveLink] = useState('home');
-  const aboutRef = useRef<HTMLDivElement>(null);
+
 
   const navigate = useNavigate();
 
@@ -35,20 +35,38 @@ const CustomNavbar: FC<CustomNavbarProps> = () => {
   const handleLinkClick = (link: string) => {
     setActiveLink(link);
     const isHome = window.location.pathname === '/';
+    let mobileMode = window.innerWidth <= 900;
 
     if (link === 'about') {
       if (isHome) {
-        window.scrollTo({
-          top: document.documentElement.scrollHeight,
-          behavior: 'smooth',
-        });
-      } else {
-        navigate('/#about_me');
-        setTimeout(() => {
+        if (mobileMode) {
+          const aboutMeTextElement = document.getElementById('about_me');
+          if (aboutMeTextElement) {
+            console.log('scrolling');
+            aboutMeTextElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        } else {
           window.scrollTo({
             top: document.documentElement.scrollHeight,
             behavior: 'smooth',
           });
+        }
+      } else {
+        navigate('/#about_me');
+        setTimeout(() => {
+          if (mobileMode) {
+            const aboutMeTextElement = document.getElementById('about_me');
+            if (aboutMeTextElement) {
+              console.log('scrolling');
+
+              aboutMeTextElement.scrollIntoView({ behavior: 'smooth' });
+            }
+          } else {
+            window.scrollTo({
+              top: document.documentElement.scrollHeight,
+              behavior: 'smooth',
+            });
+          }
         }, 1);
       }
     } else if (link === 'home') {
