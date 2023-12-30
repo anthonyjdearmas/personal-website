@@ -42,20 +42,44 @@ const Home: FC<HomeProps> = () => (
 
     <div className="container mb-5" id="about_me">
       <div className="row">
-        <div className="col-sm-12 col-lg-5">
+        <div className="col-sm-12 col-lg-5" id="about_me_text" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <img src="/img/abpic.jpg" alt="About" id="about_img" className="img-fluid rounded" />
         </div>
         <div className="col-sm-12 col-lg-7" id="about_me_text">
-          <h1 className="text-center mt-3">About me</h1>
+          <h3 className="text-center mt-3">About Me</h3>
           <hr />
-          <h4>
-            I'm a software engineer based in New York City. I enjoy creating web applications that are both intuitive and efficient.
-            I have experience with JavaScript, TypeScript, React, Node.js, Express.js, PostgreSQL.
-            I'm always looking to learn new technologies and improve my skills as a developer.
-          </h4>
+          <p style={{ textIndent: '2em' }}>
+            I'm a recent graduate from Cornell University with a deep passion for software development.
+            Throughout my academic journey, Cornell provided not just a degree but a robust foundation for
+            excellence in the tech world.
+          </p>
+          <h5 className="mt-5">Teaching and Learning at iD Tech</h5>
+          <p style={{ textIndent: '2em' }}>
+            During college, I found fulfillment in teaching programming at iD Tech, where I connected with students
+            aged 10-17. This experience enhanced my communication skills and laid the groundwork for translating
+            complex concepts into accessible lessons.
+          </p>
+          <h5>Internship to Full-Time Role at FTI Consulting</h5>
+          <p style={{ textIndent: '2em' }}>
+            Post-graduation, my journey led me to FTI Consulting, where an enriching full-stack software developer internship
+            paved the way for a full-time role. Collaborating on impactful projects and problem-solving in a dynamic environment
+            became the hallmark of my professional journey.
+          </p>
+          <h5>Passion for Projects</h5>
+          <p style={{ textIndent: '2em' }}>
+            Beyond my 9-to-5 role, I channel my enthusiasm into personal projects. A recent endeavor is an online food
+            safety training website. Users can study, track progress, and attain certification, showcasing my belief
+            in technology's practical applications. You can visit it here: <a href="https://safeservemetro.com/" target="_blank">SafeServe Metro</a>
+          </p>
+          <h5>Commitment to Growth</h5>
+          <p style={{ textIndent: '2em' }}>
+            Continuous learning isn't just a professional obligation; it's a personal commitment. Staying current with emerging technologies
+            fuels my eagerness for new challenges and ensures my contributions remain relevant in the ever-evolving software development landscape.
+          </p>
         </div>
       </div>
     </div>
+
 
   </div>
 );
