@@ -150,8 +150,24 @@ p {
     }
 }
 
-/* if screen size is less than or equal to 1200 */
 @media only screen and (max-width: 1200px) {
+
+    #intro_section {
+        display: none;
+    }
+
+    #intro_img {
+        display: none;
+    }
+
+    #about_img {
+        width: 100%;
+    }
+
+    #intro_section_mobile {
+        display: block;
+        width: 100%;
+    }
 
     #about_img {
         width: 50%;
