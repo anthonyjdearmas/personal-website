@@ -41,7 +41,7 @@ const Home: FC<HomeProps> = () => (
     </div>
 
 
-    <div className="container-fluid mb-5" id="intro_section_mobile">
+    <div className="container mb-5" id="intro_section_mobile">
       <div className="row mt-5">
         <div className="col-12">
           <div>
@@ -83,32 +83,32 @@ const Home: FC<HomeProps> = () => (
           <img src="/img/abpic.jpg" alt="About" id="about_img" className="img-fluid rounded" />
         </div>
         <div className="col-sm-12 col-lg-7" id="about_me_text">
-          <h3 className="text-center mt-3">About Me</h3>
+          <h2 className="text-center mt-3">About Me</h2>
           <hr />
           <p>
             I'm a recent graduate from Cornell University with a deep passion for software development.
             Throughout my academic journey, Cornell provided not just a degree but a robust foundation for
             excellence in the tech world.
           </p>
-          <h5 className="mt-5"><i>Teaching and Learning at iD Tech</i></h5>
+          <h3 className="mt-5"><i>Teaching and Learning at iD Tech</i></h3>
           <p>
             During college, I found fulfillment in teaching programming at iD Tech, where I connected with students
             aged 10-17. This experience enhanced my communication skills and laid the groundwork for translating
             complex concepts into accessible lessons.
           </p>
-          <h5><i>Internship to Full-Time Role at FTI Consulting</i></h5>
+          <h3><i>Internship to Full-Time Role at FTI Consulting</i></h3>
           <p>
             Post-graduation, my journey led me to FTI Consulting, where an enriching full-stack software developer internship
             paved the way for a full-time role. Collaborating on impactful projects and problem-solving in a dynamic environment
             became the hallmark of my professional journey.
           </p>
-          <h5><i>Passion for Projects</i></h5>
+          <h3><i>Passion for Projects</i></h3>
           <p>
             Beyond my 9-to-5 role, I channel my enthusiasm into personal projects. A recent endeavor is an online food
             safety training website. Users can study, track progress, and attain certification, showcasing my belief
             in technology's practical applications. You can visit it here: <a href="https://safeservemetro.com/" target="_blank">SafeServe Metro</a>
           </p>
-          <h5><i>Commitment to Growth</i></h5>
+          <h3><i>Commitment to Growth</i></h3>
           <p>
             Continuous learning isn't just a professional obligation; it's a personal commitment. Staying current with emerging technologies
             fuels my eagerness for new challenges and ensures my contributions remain relevant in the ever-evolving software development landscape.
