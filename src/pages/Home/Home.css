@@ -1,4 +1,5 @@
-.container {
+.container,
+.container-fluid {
     color: whitesmoke;
 }
 
@@ -20,9 +21,6 @@
     height: 500px;
     width: 700px;
     margin-right: 20%;
-    border: 1px solid #043a64bd;
-    border-radius: 10px;
-    box-shadow: 5px 0 10px -2px #000000;
     float: right;
     padding-left: 0px;
     padding-right: 0px;
@@ -30,9 +28,6 @@
 }
 
 #textbox {
-    background-color: #2e2933ec;
-    border: 1px solid #043a64bd;
-    box-shadow: -1px 0 8px -2px #000000;
     border-radius: 10px;
     padding: 10px;
     position: absolute;
@@ -41,6 +36,13 @@
     height: 350px;
     width: 500px;
     z-index: 1;
+}
+
+#textbox,
+#textbox_mobile {
+    background-color: #2e2933ec;
+    border: 1px solid #043a64bd;
+    box-shadow: -1px 0 8px -2px #000000;
 }
 
 #icon-git {
@@ -81,6 +83,10 @@ p {
     text-indent: 2rem;
 }
 
+#intro_section_mobile {
+    display: none;
+}
+
 #about_img {
     width: 700px;
     border: 1px solid #043a64bd;
@@ -92,6 +98,11 @@ p {
     margin-bottom: 5%;
 }
 
+#intro_img_mobile {
+    width: 150px;
+    float: right;
+}
+
 @media only screen and (max-width: 1400px) {
 
     #intro_section {
@@ -100,5 +111,13 @@ p {
 
     #intro_img {
         display: none;
+    }
+
+    #about_img {
+        width: 50%;
+    }
+
+    #intro_section_mobile {
+        display: block;
     }
 }

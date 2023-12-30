@@ -94,7 +94,6 @@ const CustomNavbar: FC<CustomNavbarProps> = () => {
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
-      <div ref={aboutRef} />
     </Navbar>
   );
 };
