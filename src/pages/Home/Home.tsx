@@ -5,7 +5,6 @@ interface HomeProps { }
 
 const Home: FC<HomeProps> = () => (
   <div>
-
     <div className="container" id="intro_section">
       <div className="row mt-5">
         <div className="col-6">
@@ -49,11 +48,11 @@ const Home: FC<HomeProps> = () => (
         <div className="col-sm-12 col-lg-7" id="about_me_text">
           <h1 className="text-center mt-3">About me</h1>
           <hr />
-          <p>
+          <h4>
             I'm a software engineer based in New York City. I enjoy creating web applications that are both intuitive and efficient.
             I have experience with JavaScript, TypeScript, React, Node.js, Express.js, PostgreSQL.
             I'm always looking to learn new technologies and improve my skills as a developer.
-          </p>
+          </h4>
         </div>
       </div>
     </div>

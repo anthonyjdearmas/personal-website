@@ -1,8 +1,8 @@
-import React, { FC, useState, useRef } from 'react';
+import React, { FC, useState, useRef, useEffect } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './custom_navbar.css';
-import { useNavigate } from 'react-router-dom'; // version 5.2.0
+import { useNavigate } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
@@ -13,8 +13,24 @@ const CustomNavbar: FC<CustomNavbarProps> = () => {
   const [activeLink, setActiveLink] = useState('home');
   const aboutRef = useRef<HTMLDivElement>(null);
 
-
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isHome = window.location.pathname === '/';
+      const isBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight;
+      const isTop = window.scrollY === 0;
+      if (isHome && isBottom) {
+        setActiveLink('about');
+      } else if (isHome && isTop) {
+        setActiveLink('home');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
 
   const handleLinkClick = (link: string) => {
     setActiveLink(link);
@@ -47,7 +63,6 @@ const CustomNavbar: FC<CustomNavbarProps> = () => {
       navigate('/projects');
     }
   };
-
 
   return (
     <Navbar expand="lg" variant="dark" id="navbar_bg" style={{ position: 'sticky', top: 0, zIndex: 100 }}>
