@@ -77,6 +77,10 @@
     border-radius: 10px;
 }
 
+p {
+    text-indent: 2rem;
+}
+
 #about_img {
     width: 700px;
     border: 1px solid #043a64bd;
