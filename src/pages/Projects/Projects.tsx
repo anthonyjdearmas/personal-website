@@ -7,108 +7,69 @@ import './Projects.css';
 interface ProjectsProps { }
 
 const Projects: React.FC<ProjectsProps> = () => {
-  const [data, setData] = useState<any>(null);
+  const [projectData, setProjectData] = useState<any[]>([]);
+
+  const getXMLData = async (projectName: string) => {
+    try {
+      const response = await axios.get(`projectData/${projectName}.xml`);
+      const result = await parseStringPromise(response.data);
+      return result[projectName];
+    } catch (error) {
+      console.error('Error fetching data', error);
+    }
+  };
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('projectData/project1.xml');
-        const result = await parseStringPromise(response.data);
-        setData(result.project1);
-      } catch (error) {
-        console.error('Error fetching data', error);
+    const fetchProjects = async () => {
+      let projects: any = [];
+      for (let i = 1; i < 10; i++) {
+        projects.push(getXMLData(`project${i}`));
       }
+      const results = await Promise.all(projects);
+      setProjectData(results);
     };
 
-    fetchData();
+    fetchProjects();
   }, []);
-
-  if (!data) {
-    return <div>Loading...</div>;
-  }
-
-
-
-  //   <project1>
-  //     <iconImg>project1.png</iconImg>
-  //     <title>Project 1</title>
-  //     <dateCompleted>2018-01-01</dateCompleted>
-  //     <githubURL>https://github.com/anthonyjdearmas/GmodStore-Job-Notifer</githubURL>
-
-
-
-  //     <backgroundTitle>Background</backgroundTitle>
-  //     <backgroundDesc>
-  //     Garry's Mod is a popular sandbox computer game that was created in 2004. In the game, people are able to create servers with various 
-  //     mods using the Lua programming language. Many users want to make new mods for their friends and themselves to enjoy, but are not sure 
-  //     how to code. This is why the Garry's Mod script market place, https://www.gmodstore.com , was founded. Through the market place, people 
-  //     who want a mod to be made can post a job listing for a freelance developer, such as myself, to apply. However, developers need to be quick 
-  //     to see the new jobs and apply because you compete with other developers. I would find myself missing out on a lot of jobs I would like 
-  //     to do because I was not refreshing the page every 5 minutes to see new listings. So I decided to create a Java web-scraping program that
-  //      will automatically notify me of new jobs!
-  //     </backgroundDesc>
-
-  //     <learnedPts>
-  //         <pts>Learned 1</pts>
-  //         <pts>Learned 2</pts>
-  //         <pts>Learned 3</pts>
-  //     </learnedPts>
-
-  //     <section>
-  //         <title>Project Media</title>
-  //         <img>project1.png</img>
-  //         <imgDesc>Project 1</imgDesc>
-
-  //         <img>project1.png</img>
-  //         <imgDesc>Project 1</imgDesc>
-
-  //         <img>project1.png</img>
-  //         <imgDesc>Project 1</imgDesc>
-  //     </section>
-
-  //     <section>
-  //         <title>Jobs I completed</title>
-
-  //         <img>project1.png</img>
-  //         <imgDesc>Project 1</imgDesc>
-
-  //         <img>project1.png</img>
-  //         <imgDesc>Project 1</imgDesc>
-  //     </section>
-
-  // </project1>
-
 
   return (
     <div className="container mt-5">
+      <div className="alert alert-secondary text-center" role="alert">
+        Click on the tabs to see more information about each project.
+      </div>
+
       <div className="row">
         <div className="col-12">
           <Accordion defaultActiveKey="0" id="projects_accordion">
-            <Accordion.Item eventKey="0">
-              <Accordion.Header>
-                <div className="container-fluid">
-                  <div className="row">
-                    <div className="col-1 px-1 imgCol"> {/* Adjust this line */}
-                      <img className="iconImg" src={data.iconImg} alt={data.title} />
-                    </div>
-                    <div className="col-3 mt-2 px-1"> {/* Adjust this line */}
-                      <h2>{data.title}</h2>
-                    </div>
-                  </div>
+            {projectData.filter((project: any) => project !== undefined).map((project: any, index: number) => {
+              return (
+                <Accordion.Item eventKey={`${index}`} key={`${index}`}>
+                  <Accordion.Header>
+                    <div className="container-fluid">
+                      <div className="row">
+                        <div className="col-1 px-1 imgCol">
+                          <img className="iconImg" src={project.iconImg} alt={project.title} />
+                        </div>
+                        <div className="col-3 mt-2 px-1">
+                          <h2>{project.title}</h2>
+                        </div>
+                      </div>
 
-                  <div className="row mt-4">
-                    <div className="col-12">
-                      <h6><strong>Date Completed:</strong> {data.dateCompleted}</h6>
-                      <h6><strong>Project Languages:</strong> {data.projectLanguages}</h6>
-                      <a href={data.githubURL} target="_blank" rel="noopener noreferrer" className="github_url"><strong>Github</strong></a><h6></h6>
+                      <div className="row mt-4">
+                        <div className="col-12">
+                          <h6><strong>Date Completed:</strong> {project.dateCompleted}</h6>
+                          <h6><strong>Project Languages:</strong> {project.projectLanguages}</h6>
+                          <a href={project.githubURL} target="_blank" rel="noopener noreferrer" className="github_url"><strong>Github</strong></a><h6></h6>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </Accordion.Header>
-              <Accordion.Body>
-                <h4>{data.backgroundTitle}</h4>
-              </Accordion.Body>
-            </Accordion.Item>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <h4>{project.backgroundTitle}</h4>
+                  </Accordion.Body>
+                </Accordion.Item>
+              );
+            })}
           </Accordion>
         </div>
       </div>

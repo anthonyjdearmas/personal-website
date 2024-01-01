@@ -1,0 +1,49 @@
+<project2>
+    <iconImg>/projectData/img/project1/icon_img.png</iconImg>
+    <title>Project 1</title>
+    <dateCompleted>2018-01-01</dateCompleted>
+    <projectLanguages>Java, HTML, CSS</projectLanguages>
+    <githubURL>https://github.com/anthonyjdearmas/GmodStore-Job-Notifer</githubURL>
+
+
+
+    <backgroundTitle>Background</backgroundTitle>
+    <backgroundDesc>
+    Garry's Mod is a popular sandbox computer game that was created in 2004. In the game, people are able to create servers with various 
+    mods using the Lua programming language. Many users want to make new mods for their friends and themselves to enjoy, but are not sure 
+    how to code. This is why the Garry's Mod script market place, https://www.gmodstore.com , was founded. Through the market place, people 
+    who want a mod to be made can post a job listing for a freelance developer, such as myself, to apply. However, developers need to be quick 
+    to see the new jobs and apply because you compete with other developers. I would find myself missing out on a lot of jobs I would like 
+    to do because I was not refreshing the page every 5 minutes to see new listings. So I decided to create a Java web-scraping program that
+     will automatically notify me of new jobs!
+    </backgroundDesc>
+
+    <learnedPts>
+        <pts>Learned 1</pts>
+        <pts>Learned 2</pts>
+        <pts>Learned 3</pts>
+    </learnedPts>
+
+    <section>
+        <title>Project Media</title>
+        <img>project1.png</img>
+        <imgDesc>Project 1</imgDesc>
+
+        <img>project1.png</img>
+        <imgDesc>Project 1</imgDesc>
+
+        <img>project1.png</img>
+        <imgDesc>Project 1</imgDesc>
+    </section>
+
+    <section>
+        <title>Jobs I completed</title>
+
+        <img>project1.png</img>
+        <imgDesc>Project 1</imgDesc>
+
+        <img>project1.png</img>
+        <imgDesc>Project 1</imgDesc>
+    </section>
+
+</project2>
