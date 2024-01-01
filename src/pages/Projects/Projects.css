@@ -29,3 +29,31 @@
     -webkit-filter: grayscale(1) invert(1);
     filter: grayscale(1) invert(1);
 }
+
+.accordion-button[aria-expanded="true"]::after {
+    -webkit-filter: grayscale(1) invert(0.5);
+    filter: grayscale(1) invert(0.5);
+}
+
+.iconImg {
+    width: 60px;
+    height: 60px;
+}
+
+.imgCol {
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    float: right;
+}
+
+.github_url {
+    color: #ffffff;
+    font-size: 20px;
+}
