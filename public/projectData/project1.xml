@@ -1,0 +1,34 @@
+<project1>
+    <title>Project 1</title>
+    <icon-img>project1.png</icon-img>
+    <background>Project 1 Summary</background>
+
+    <learned-pts>
+        <pts>Learned 1</pts>
+        <pts>Learned 2</pts>
+        <pts>Learned 3</pts>
+    </learned-pts>
+
+    <section>
+        <title>Project Media</title>
+        <img>project1.png</img>
+        <img-desc>Project 1</img-desc>
+
+        <img>project1.png</img>
+        <img-desc>Project 1</img-desc>
+
+        <img>project1.png</img>
+        <img-desc>Project 1</img-desc>
+    </section>
+
+    <section>
+        <title>Jobs I completed</title>
+
+        <img>project1.png</img>
+        <img-desc>Project 1</img-desc>
+
+        <img>project1.png</img>
+        <img-desc>Project 1</img-desc>
+    </section>
+
+</project1>

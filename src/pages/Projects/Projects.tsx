@@ -1,5 +1,6 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
+import './Projects.css';
 
 
 
@@ -9,7 +10,7 @@ const Projects: React.FC<ProjectsProps> = () => (
   <div className="container mt-5">
     <div className="row">
       <div className="col-12">
-        <Accordion defaultActiveKey="0">
+        <Accordion defaultActiveKey="0" id="projects_accordion">
           <Accordion.Item eventKey="0">
             <Accordion.Header>Accordion Item #1</Accordion.Header>
             <Accordion.Body>
