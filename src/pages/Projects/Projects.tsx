@@ -43,7 +43,7 @@ const Projects: React.FC<ProjectsProps> = () => {
       <div className="row">
         <div className="col-12">
           <Accordion defaultActiveKey="0" id="projects_accordion">
-            {projectData.filter((project: any) => project !== undefined).map((project: any, index: number) => {
+            {projectData.filter((project: any) => project !== undefined).reverse().map((project: any, index: number) => {
               return (
                 <Accordion.Item eventKey={`${index}`} key={`${index}`}>
                   <Accordion.Header>

@@ -1,6 +1,6 @@
-<project2>
+<project3>
     <iconImg>/projectData/img/project2/icon_img.png</iconImg>
-    <title>GmodStore Job Notifier</title>
+    <title>Project 3</title>
     <dateCompleted>14 June 2020</dateCompleted>
     <projectLanguages>Java, HTML, CSS, Lua</projectLanguages>
     <githubURL>https://github.com/anthonyjdearmas/GmodStore-Job-Notifer</githubURL>
@@ -59,4 +59,4 @@
 
 
 
-</project2>
+</project3>
