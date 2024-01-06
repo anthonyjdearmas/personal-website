@@ -50,7 +50,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                     <div className="container-fluid">
                       <div className="row">
                         <div className="col-1 imgCol">
-                          <img className="iconImg img-fluid" src={project.iconImg} alt={project.title} />
+                          <img className="iconImg" src={project.iconImg} alt={project.title} />
                         </div>
                         <div className="col-11 mt-2 projectTitle">
                           <h2>{project.title}</h2>
