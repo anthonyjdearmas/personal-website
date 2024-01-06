@@ -3,6 +3,8 @@ import axios from 'axios';
 import { parseStringPromise } from 'xml2js';
 import Accordion from 'react-bootstrap/Accordion';
 import './Projects.css';
+import ScrollToTop from '../../components/scroll-to-top/scroll-to-top';
+
 
 interface ProjectsProps { }
 
@@ -47,10 +49,10 @@ const Projects: React.FC<ProjectsProps> = () => {
                   <Accordion.Header>
                     <div className="container-fluid">
                       <div className="row">
-                        <div className="col-1 px-1 imgCol">
+                        <div className="col-1 imgCol">
                           <img className="iconImg" src={project.iconImg} alt={project.title} />
                         </div>
-                        <div className="col-11 mt-2 px-1">
+                        <div className="col-11 mt-2">
                           <h2>{project.title}</h2>
                         </div>
                       </div>
@@ -103,6 +105,7 @@ const Projects: React.FC<ProjectsProps> = () => {
           </Accordion>
         </div>
       </div>
+      <ScrollToTop />
     </div>
   );
 };
