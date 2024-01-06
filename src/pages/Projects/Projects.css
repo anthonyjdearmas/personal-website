@@ -2,6 +2,7 @@
     background-color: #2e293385;
     border: none;
     box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
 }
 
 #projects_accordion .accordion-button {

@@ -65,7 +65,37 @@ const Projects: React.FC<ProjectsProps> = () => {
                     </div>
                   </Accordion.Header>
                   <Accordion.Body>
-                    <h4>{project.backgroundTitle}</h4>
+                    <h2>{project.backgroundTitle}</h2>
+                    <p>{project.backgroundDesc}</p>
+
+                    <h2 className="mt-5">{project.learnedTitle}</h2>
+                    <ul>
+                      {project.learnedPts[0].pts.map((pt: string, index: number) => {
+                        return (
+                          <li key={`${index}`}>{pt}</li>
+                        );
+                      })}
+                    </ul>
+
+
+                    {project.section.map((section_part: any, index: number) => {
+                      console.log(section_part);
+                      return (
+                        <div>
+                          <h2 className='mt-5'>{section_part.title}</h2>
+                          {section_part.img.map((section_img: any, subIndex: number) => {
+                            return (
+                              <div className="text-center mt-3">
+                                <p>{section_img.path}</p>
+                                <p>{section_img.desc}</p>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      );
+                    })}
+
+
                   </Accordion.Body>
                 </Accordion.Item>
               );

@@ -17,7 +17,9 @@
     to do because I was not refreshing the page every 5 minutes to see new listings. So I decided to create a Java web-scraping program that
      will automatically notify me of new jobs!
     </backgroundDesc>
+    <backgroundImg>/projectData/img/project1/background_img.png</backgroundImg>
 
+    <learnedTitle>What I learned</learnedTitle>
     <learnedPts>
         <pts>Learned 1</pts>
         <pts>Learned 2</pts>
@@ -26,24 +28,32 @@
 
     <section>
         <title>Project Media</title>
-        <img>project1.png</img>
-        <imgDesc>Project 1</imgDesc>
 
-        <img>project1.png</img>
-        <imgDesc>Project 1</imgDesc>
+        <img>
+            <path>project2.png</path>
+            <desc>Project 2</desc>
+        </img>
 
-        <img>project1.png</img>
-        <imgDesc>Project 1</imgDesc>
+        <img>
+            <path>project3.png</path>
+            <desc>Project 3</desc>
+        </img>
     </section>
 
     <section>
         <title>Jobs I completed</title>
 
-        <img>project1.png</img>
-        <imgDesc>Project 1</imgDesc>
+        <img>
+            <path>anotherimg1.png</path>
+            <desc>anotherimg 1</desc>
+        </img>
 
-        <img>project1.png</img>
-        <imgDesc>Project 1</imgDesc>
+        <img>
+            <path>anotherimg2.png</path>
+            <desc>anotherimg 2</desc>
+        </img>
     </section>
+
+
 
 </project1>
