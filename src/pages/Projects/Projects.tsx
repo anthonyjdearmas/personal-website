@@ -50,9 +50,9 @@ const Projects: React.FC<ProjectsProps> = () => {
                     <div className="container-fluid">
                       <div className="row">
                         <div className="col-1 imgCol">
-                          <img className="iconImg" src={project.iconImg} alt={project.title} />
+                          <img className="iconImg img-fluid" src={project.iconImg} alt={project.title} />
                         </div>
-                        <div className="col-11 mt-2">
+                        <div className="col-11 mt-2 projectTitle">
                           <h2>{project.title}</h2>
                         </div>
                       </div>
@@ -79,7 +79,9 @@ const Projects: React.FC<ProjectsProps> = () => {
                       })}
                     </ul>
 
-                    <img className="backgroundImg img-fluid" src={project.backgroundImg} alt={project.backgroundImg} />
+                    <div className='text-center'>
+                      <img className="backgroundImg" src={project.backgroundImg} alt={project.backgroundImg} />
+                    </div>
                     <h5 className="pt-3 text-center">{project.backgroundImgDesc}</h5>
 
                     {project.section.map((section_part: any, index: number) => {
