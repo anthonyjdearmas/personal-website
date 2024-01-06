@@ -1,7 +1,7 @@
 <project1>
     <iconImg>/projectData/img/project1/icon_img.png</iconImg>
     <title>GmodStore Job Notifier</title>
-    <dateCompleted>2018-01-01</dateCompleted>
+    <dateCompleted>14 June 2020</dateCompleted>
     <projectLanguages>Java, HTML, CSS, Lua</projectLanguages>
     <githubURL>https://github.com/anthonyjdearmas/GmodStore-Job-Notifer</githubURL>
 
