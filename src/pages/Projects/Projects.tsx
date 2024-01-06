@@ -50,7 +50,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                         <div className="col-1 px-1 imgCol">
                           <img className="iconImg" src={project.iconImg} alt={project.title} />
                         </div>
-                        <div className="col-3 mt-2 px-1">
+                        <div className="col-11 mt-2 px-1">
                           <h2>{project.title}</h2>
                         </div>
                       </div>
@@ -66,10 +66,10 @@ const Projects: React.FC<ProjectsProps> = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <h2>{project.backgroundTitle}</h2>
-                    <p>{project.backgroundDesc}</p>
+                    <p className="pb-5">{project.backgroundDesc}</p>
 
-                    <h2 className="mt-5">{project.learnedTitle}</h2>
-                    <ul>
+                    <h2>{project.learnedTitle}</h2>
+                    <ul className="pb-5">
                       {project.learnedPts[0].pts.map((pt: string, index: number) => {
                         return (
                           <li key={`${index}`}>{pt}</li>
@@ -77,6 +77,8 @@ const Projects: React.FC<ProjectsProps> = () => {
                       })}
                     </ul>
 
+                    <img className="backgroundImg img-fluid" src={project.backgroundImg} alt={project.backgroundImg} />
+                    <h5 className="pt-3 text-center">{project.backgroundImgDesc}</h5>
 
                     {project.section.map((section_part: any, index: number) => {
                       console.log(section_part);
@@ -85,17 +87,15 @@ const Projects: React.FC<ProjectsProps> = () => {
                           <h2 className='mt-5'>{section_part.title}</h2>
                           {section_part.img.map((section_img: any, subIndex: number) => {
                             return (
-                              <div className="text-center mt-3">
-                                <p>{section_img.path}</p>
-                                <p>{section_img.desc}</p>
+                              <div className="text-center mt-5">
+                                <img className="img-fluid" src={section_img.path} alt={section_img.path} />
+                                <h6 className="pt-3">{section_img.desc}</h6>
                               </div>
                             );
                           })}
                         </div>
                       );
                     })}
-
-
                   </Accordion.Body>
                 </Accordion.Item>
               );

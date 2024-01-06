@@ -1,8 +1,8 @@
 <project1>
     <iconImg>/projectData/img/project1/icon_img.png</iconImg>
-    <title>Project 1</title>
+    <title>GmodStore Job Notifier</title>
     <dateCompleted>2018-01-01</dateCompleted>
-    <projectLanguages>Java, HTML, CSS</projectLanguages>
+    <projectLanguages>Java, HTML, CSS, Lua</projectLanguages>
     <githubURL>https://github.com/anthonyjdearmas/GmodStore-Job-Notifer</githubURL>
 
 
@@ -17,26 +17,34 @@
     to do because I was not refreshing the page every 5 minutes to see new listings. So I decided to create a Java web-scraping program that
      will automatically notify me of new jobs!
     </backgroundDesc>
-    <backgroundImg>/projectData/img/project1/background_img.png</backgroundImg>
+    <backgroundImg>/projectData/img/project1/gmodnotifier_app.png</backgroundImg>
+    <backgroundImgDesc>The GmodStore job notifier that I created to be able to apply to more jobs.</backgroundImgDesc>
 
     <learnedTitle>What I learned</learnedTitle>
     <learnedPts>
-        <pts>Learned 1</pts>
-        <pts>Learned 2</pts>
-        <pts>Learned 3</pts>
+        <pts>How to efficently web scrape a website for information via JSoup</pts>
+        <pts>Java-based GUI development via JSwing</pts>
+        <pts>Synchronization</pts>
+        <pts>Netlibrary usage (Lua)</pts>
+        <pts>HUD design (Lua)</pts>
+        <pts>Client communication and interaction</pts>
     </learnedPts>
 
     <section>
         <title>Project Media</title>
 
         <img>
-            <path>project2.png</path>
-            <desc>Project 2</desc>
+            <path>/projectData/img/project1/ex_job2.jpg</path>
+            <desc>
+            Job Description: Turn my prop model into flyable entity that players can drive. Planes must also be able to drop bombs and carry 8 passengers inside.
+            </desc>
         </img>
 
         <img>
-            <path>project3.png</path>
-            <desc>Project 3</desc>
+            <path>/projectData/img/project1/ex_job3.png</path>
+            <desc>
+            Job Description: Modify his existing code to add a skill system that allows players to level up and gain new abilities.
+            </desc>
         </img>
     </section>
 
@@ -44,13 +52,8 @@
         <title>Jobs I completed</title>
 
         <img>
-            <path>anotherimg1.png</path>
-            <desc>anotherimg 1</desc>
-        </img>
-
-        <img>
-            <path>anotherimg2.png</path>
-            <desc>anotherimg 2</desc>
+            <path>/projectData/img/project1/gmodstore_rep.png</path>
+            <desc>Here are some of my client reviews!</desc>
         </img>
     </section>
 
