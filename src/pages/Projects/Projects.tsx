@@ -34,6 +34,10 @@ const Projects: React.FC<ProjectsProps> = () => {
     fetchProjects();
   }, []);
 
+  const handleAccordionItemClick = () => {
+    window.scrollTo(0, window.innerHeight * 0.25);
+  };
+
   return (
     <div className="container mt-5">
       <div className="alert alert-secondary text-center" role="alert">
@@ -42,10 +46,10 @@ const Projects: React.FC<ProjectsProps> = () => {
 
       <div className="row">
         <div className="col-12">
-          <Accordion defaultActiveKey="0" id="projects_accordion">
+          <Accordion id="projects_accordion">
             {projectData.filter((project: any) => project !== undefined).reverse().map((project: any, index: number) => {
               return (
-                <Accordion.Item eventKey={`${index}`} key={`${index}`}>
+                <Accordion.Item eventKey={`${index}`} key={`${index}`} onClick={handleAccordionItemClick}>
                   <Accordion.Header>
                     <div className="container-fluid">
                       <div className="row">
@@ -60,7 +64,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                       <div className="row mt-4">
                         <div className="col-12">
                           <h6><strong>Date Completed:</strong> {project.dateCompleted}</h6>
-                          <h6><strong>Project Languages:</strong> {project.projectLanguages}</h6>
+                          <h6><strong>Project Languages/Libraries:</strong> {project.projectLanguages}</h6>
                           {project.githubURL && (
                             <a href={project.githubURL} target="_blank" rel="noopener noreferrer" className="github_url">
                               <strong>Github</strong>

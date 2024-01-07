@@ -1,7 +1,7 @@
 <project1>
     <iconImg>/projectData/img/project1/assign_logo.png</iconImg>
     <title>Automated Job Assigner</title>
-    <dateCompleted>23 May 2019</dateCompleted>
+    <dateCompleted>May 2019</dateCompleted>
     <projectLanguages>Python, Kivy</projectLanguages>
     <githubURL>https://github.com/anthonyjdearmas/Job-Assigner</githubURL>
 
