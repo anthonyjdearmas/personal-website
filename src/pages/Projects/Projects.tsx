@@ -49,8 +49,8 @@ const Projects: React.FC<ProjectsProps> = () => {
           <Accordion id="projects_accordion">
             {projectData.filter((project: any) => project !== undefined).reverse().map((project: any, index: number) => {
               return (
-                <Accordion.Item eventKey={`${index}`} key={`${index}`} onClick={handleAccordionItemClick}>
-                  <Accordion.Header>
+                <Accordion.Item eventKey={`${index}`} key={`${index}`}>
+                  <Accordion.Header onClick={handleAccordionItemClick}>
                     <div className="container-fluid">
                       <div className="row">
                         <div className="col-1 imgCol">
