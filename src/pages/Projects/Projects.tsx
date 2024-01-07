@@ -61,7 +61,17 @@ const Projects: React.FC<ProjectsProps> = () => {
                         <div className="col-12">
                           <h6><strong>Date Completed:</strong> {project.dateCompleted}</h6>
                           <h6><strong>Project Languages:</strong> {project.projectLanguages}</h6>
-                          <a href={project.githubURL} target="_blank" rel="noopener noreferrer" className="github_url"><strong>Github</strong></a><h6></h6>
+                          {project.githubURL && (
+                            <a href={project.githubURL} target="_blank" rel="noopener noreferrer" className="github_url">
+                              <strong>Github</strong>
+                            </a>
+                          )}
+
+                          {project.academicPaper && (
+                            <a href={project.academicPaper} target="_blank" rel="noopener noreferrer" className="academic_url">
+                              <strong>Full Academic Paper</strong>
+                            </a>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -80,7 +90,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                     </ul>
 
                     <div className='text-center'>
-                      <img className="backgroundImg" src={project.backgroundImg} alt={project.backgroundImg} />
+                      <img className="backgroundImg img-fluid" src={project.backgroundImg} alt={project.backgroundImg} />
                     </div>
                     <h5 className="pt-3 text-center">{project.backgroundImgDesc}</h5>
 

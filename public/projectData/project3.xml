@@ -1,62 +1,55 @@
 <project3>
-    <iconImg>/projectData/img/project2/icon_img.png</iconImg>
-    <title>Project 3</title>
-    <dateCompleted>14 June 2020</dateCompleted>
-    <projectLanguages>Java, HTML, CSS, Lua</projectLanguages>
-    <githubURL>https://github.com/anthonyjdearmas/GmodStore-Job-Notifer</githubURL>
+    <iconImg>/projectData/img/project3/research_icon.png</iconImg>
+    <title>University Research: Notational Programming Language for Quantum Circuits</title>
+    <dateCompleted>2022 Spring Semester</dateCompleted>
+    <projectLanguages>Python, Tensorflow</projectLanguages>
+    <academicPaper>https://github.com/anthonyjdearmas/notate_academic_paper</academicPaper>
 
 
 
     <backgroundTitle>Background</backgroundTitle>
     <backgroundDesc>
-    Garry's Mod is a popular sandbox computer game that was created in 2004. In the game, people are able to create servers with various 
-    mods using the Lua programming language. Many users want to make new mods for their friends and themselves to enjoy, but are not sure 
-    how to code. This is why the Garry's Mod script market place, https://www.gmodstore.com , was founded. Through the market place, people 
-    who want a mod to be made can post a job listing for a freelance developer, such as myself, to apply. However, developers need to be quick 
-    to see the new jobs and apply because you compete with other developers. I would find myself missing out on a lot of jobs I would like 
-    to do because I was not refreshing the page every 5 minutes to see new listings. So I decided to create a Java web-scraping program that
-     will automatically notify me of new jobs!
+         I participated in research during my senior year. We worked on a project called Notate. Notate is a Python-based 
+         sketch interpreter library providing basic utilities to preprocess, segment and classify drawings.
+         It also provides and connects to interactive UIs for drawing in the browser on pen-based tablets. Some applications 
+         include collecting handwritten data, exploring sketch interpretation algorithms, or as the foundation for drawing 
+         interfaces running on web-based platforms. Notate's main goal is to support the democratization and integration of 
+         pen-based computing into more traditional web and GUI experiences.
     </backgroundDesc>
-    <backgroundImg>/projectData/img/project2/gmodnotifier_app.png</backgroundImg>
-    <backgroundImgDesc>The GmodStore job notifier that I created to be able to apply to more jobs.</backgroundImgDesc>
+    <backgroundImg>/projectData/img/project3/main.png</backgroundImg>
+    <backgroundImgDesc>The first page of the academic paper that I co-authored. You can read the abstract to get a summary of the project.</backgroundImgDesc>
 
     <learnedTitle>What I learned</learnedTitle>
     <learnedPts>
-        <pts>How to efficently web scrape a website for information via JSoup</pts>
-        <pts>Java-based GUI development via JSwing</pts>
-        <pts>Synchronization</pts>
-        <pts>Netlibrary usage (Lua)</pts>
-        <pts>HUD design (Lua)</pts>
-        <pts>Client communication and interaction</pts>
+        <pts>Applications of convolutional neural networks</pts>
+        <pts>Core computer vision concepts: intersection detection, gaussian filtering, equidistant resampling</pts>
+        <pts>Quantum circuits</pts>
+        <pts>Human computer interaction development cycle</pts>
+        <pts>How to perform university level academic research</pts>
     </learnedPts>
 
     <section>
         <title>Project Media</title>
 
         <img>
-            <path>/projectData/img/project2/ex_job2.jpg</path>
+            <path>/projectData/img/project3/sketch-to-graph.png</path>
             <desc>
-            Job Description: Turn my prop model into flyable entity that players can drive. Planes must also be able to drop bombs and carry 8 passengers inside.
+                Here is an example of what the Notate library can do. It can take a sketch and convert it into a graph.
             </desc>
         </img>
 
         <img>
-            <path>/projectData/img/project2/ex_job3.png</path>
+            <path>/projectData/img/project3/algo_output.png</path>
             <desc>
-            Job Description: Modify his existing code to add a skill system that allows players to level up and gain new abilities.
+                This is what the algorithm output looks like. This represents the quantum circuit that is generated from the sketch.
+            </desc>
+        </img>
+
+        <img>
+            <path>/projectData/img/project3/notation.png</path>
+            <desc>
+                This is the notation that we developed for the computer vision algorithm to interpret.
             </desc>
         </img>
     </section>
-
-    <section>
-        <title>Jobs I completed</title>
-
-        <img>
-            <path>/projectData/img/project2/gmodstore_rep.png</path>
-            <desc>Here are some of my client reviews!</desc>
-        </img>
-    </section>
-
-
-
 </project3>
