@@ -1,6 +1,6 @@
 <project4>
     <iconImg>/projectData/img/project4/favicon.png</iconImg>
-    <title>SafeServe Metro Food Safety Certification Web Application</title>
+    <title>SafeServe Metro Full Stack Web Application</title>
     <dateCompleted>June 2023</dateCompleted>
     <projectLanguages>Angular 2, NodeJS, Express, MySQL</projectLanguages>
     <githubURL>https://github.com/anthonyjdearmas/safeservemetro</githubURL>
@@ -15,7 +15,7 @@
         Hence the SafeServe Metro web application was born. I developed this application using the Angular 2 framework for the front end, and NodeJS for the backend.
         I used MySQL as the database to store all of the customer information and course content. I also used the Square API to handle the payment processing. I then
         deployed the web apllication to an AWS EC2 instance. To this day there are over 100+ customers that have used the application to sign up for the course! With
-        the processing being fully automated, my father has been able to focus on other aspects of the business.
+        the processing being fully automated, my father has been able to focus on other aspects of the business. The URL is: https://safeservemetro.com/
     </backgroundDesc>
     <backgroundImg>/projectData/img/project4/main.jpg</backgroundImg>
     <backgroundImgDesc>The first page of the academic paper that I co-authored. You can read the abstract to get a summary of the project.</backgroundImgDesc>
@@ -23,7 +23,7 @@
     <learnedTitle>What I learned</learnedTitle>
     <learnedPts>
         <pts>How to create and deploy a scalable web application on AWS for real users.</pts>
-        <pts>Domain and SSL registration registration</pts>
+        <pts>Domain registration and HTTPS protcol</pts>
         <pts>User authentication using JSON Web Tokens</pts>
         <pts>Server side rendering</pts>
         <pts>SMTP for delivering automatic emails</pts>

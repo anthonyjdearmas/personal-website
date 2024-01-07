@@ -77,8 +77,10 @@ const CustomNavbar: FC<CustomNavbarProps> = () => {
         top: 0,
         behavior: 'smooth',
       });
-    } else {
+    } else if (link === 'projects') {
       navigate('/projects');
+    } else if (link === 'resume') {
+      navigate('/resume');
     }
   };
 
@@ -105,8 +107,8 @@ const CustomNavbar: FC<CustomNavbarProps> = () => {
               Projects
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="" target="_blank" id="nav-link4">
+          <Nav.Item className={activeLink === 'resume' ? 'active' : ''}>
+            <Nav.Link as={Link} to="/resume" id="nav-link4" onClick={() => handleLinkClick('resume')}>
               Resume
             </Nav.Link>
           </Nav.Item>
