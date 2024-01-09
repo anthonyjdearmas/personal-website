@@ -99,10 +99,22 @@ const Projects: React.FC<ProjectsProps> = () => {
                     <h5 className="pt-3 text-center">{project.backgroundImgDesc}</h5>
 
                     {project.section.map((section_part: any, index: number) => {
-                      console.log(section_part);
                       return (
                         <div>
                           <h2 className='mt-5'>{section_part.title}</h2>
+
+                          {section_part.mp4 && section_part.mp4.map((section_mp4: any, subIndex: number) => {
+                            return (
+                              <div className="text-center mt-5">
+                                <video width="auto" height="auto" autoPlay loop controls={true}>
+                                  <source src={require('./projectVideos/webscraping.mp4')} type="video/ogg" />
+                                  Your browser does not support the video tag.
+                                </video>
+                                <h6 className="pt-3">{section_mp4.desc}</h6>
+                              </div>
+                            );
+                          })}
+
                           {section_part.img.map((section_img: any, subIndex: number) => {
                             return (
                               <div className="text-center mt-5">

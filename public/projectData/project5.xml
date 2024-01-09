@@ -1,0 +1,50 @@
+<project5>
+    <iconImg>/projectData/img/project5/icon.png</iconImg>
+    <title>Advanced Webscraper for Food Business Data</title>
+    <dateCompleted>December 2024</dateCompleted>
+    <projectLanguages>Python, Selenium</projectLanguages>
+    <githubURL>https://github.com/anthonyjdearmas/pa_business_webscraper</githubURL>
+
+
+
+    <backgroundTitle>Background</backgroundTitle>
+    <backgroundDesc>
+    With SafeServe Metro completed, I thought it would be a good idea to create a webscraper that would gather data from Pennsylvania's
+    Department of Agriculture's website to see which busineses have an expired food safety certificate. This would help connect customer's who
+    are in need of a food safety certificate with the website that I created. However, the website uses Microsoft's ASP.NET framework which makes
+    it difficult to scrape data from. I had to use Selenium to automate the process of clicking through the website and gathering the data.
+    In addition, the only way to determine if a company has an expired certificate is to analyze the inspectors' comments. Each inspector uses
+    different wording to describe an expired certificate. To get around this I created a small dictionary of REGEX expressions that would
+    match the inspector's comments to determine if a company has an expired certificate. The program is fully configurable to make it easy
+    for anyone to run it. You can choose the time frame to scrape from along with which counties you want to scrape. With this, I was able 
+    to gather data from over 500 businesses in Pennsylvania and determine which ones have an expired certificate.
+    </backgroundDesc>
+    <backgroundImg></backgroundImg>
+    <backgroundImgDesc></backgroundImgDesc>
+
+    <learnedTitle>What I learned</learnedTitle>
+    <learnedPts>
+        <pts>How data is processed in ASP .NET web applications</pts>
+        <pts>Advanced web scraping techniques</pts>
+        <pts>Synchronization</pts>
+        <pts>Pattern recognition using REGEX</pts>
+    </learnedPts>
+
+    <section>
+        <title>Project Media</title>
+
+        <mp4>
+            <path>/projectData/img/project5/scraper_demo.mp4</path>
+            <desc>
+                Here is a demo of the webscraper in action. It is fully automated and can be configured to scrape any county in Pennsylvania.
+            </desc>
+        </mp4>
+
+        <img>
+            <path>/projectData/img/project5/patterns.png</path>
+            <desc>
+                The patterns that I used to determine if a company has an expired certificate.
+            </desc>
+        </img>
+    </section>
+</project5>
