@@ -106,7 +106,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                           {section_part.mp4 && section_part.mp4.map((section_mp4: any, subIndex: number) => {
                             return (
                               <div className="text-center mt-5">
-                                <video width="auto" height="auto" autoPlay loop controls={true}>
+                                <video autoPlay loop controls={true} id="video_wrapper">
                                   <source src={require('./projectVideos/webscraping.mp4')} type="video/ogg" />
                                   Your browser does not support the video tag.
                                 </video>
