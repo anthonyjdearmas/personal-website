@@ -1,0 +1,62 @@
+<project2>
+    <iconImg>/projectData/img/project2/icon_img.png</iconImg>
+    <title>GmodStore Job Notifier</title>
+    <dateCompleted>June 2020</dateCompleted>
+    <projectLanguages>Java, HTML, CSS, Lua</projectLanguages>
+    <githubURL>https://github.com/anthonyjdearmas/GmodStore-Job-Notifer</githubURL>
+
+
+
+    <backgroundTitle>Background</backgroundTitle>
+    <backgroundDesc>
+    Garry's Mod is a popular sandbox computer game that was created in 2004. In the game, people are able to create servers with various 
+    mods using the Lua programming language. Many users want to make new mods for their friends and themselves to enjoy, but are not sure 
+    how to code. This is why the Garry's Mod script market place, https://www.gmodstore.com , was founded. Through the market place, people 
+    who want a mod to be made can post a job listing for a freelance developer, such as myself, to apply. However, developers need to be quick 
+    to see the new jobs and apply because you compete with other developers. I would find myself missing out on a lot of jobs I would like 
+    to do because I was not refreshing the page every 5 minutes to see new listings. So I decided to create a Java web-scraping program that
+     will automatically notify me of new jobs!
+    </backgroundDesc>
+    <backgroundImg>/projectData/img/project2/gmodnotifier_app.png</backgroundImg>
+    <backgroundImgDesc>The GmodStore job notifier that I created to be able to apply to more jobs.</backgroundImgDesc>
+
+    <learnedTitle>What I learned</learnedTitle>
+    <learnedPts>
+        <pts>How to efficently web scrape a website for information via JSoup</pts>
+        <pts>Java-based GUI development via JSwing</pts>
+        <pts>Synchronization</pts>
+        <pts>Netlibrary usage (Lua)</pts>
+        <pts>HUD design (Lua)</pts>
+        <pts>Client communication and interaction</pts>
+    </learnedPts>
+
+    <section>
+        <title>Project Media</title>
+
+        <img>
+            <path>/projectData/img/project2/ex_job2.jpg</path>
+            <desc>
+            Job Description: Turn my prop model into flyable entity that players can drive. Planes must also be able to drop bombs and carry 8 passengers inside.
+            </desc>
+        </img>
+
+        <img>
+            <path>/projectData/img/project2/ex_job3.png</path>
+            <desc>
+            Job Description: Modify his existing code to add a skill system that allows players to level up and gain new abilities.
+            </desc>
+        </img>
+    </section>
+
+    <section>
+        <title>Jobs I completed</title>
+
+        <img>
+            <path>/projectData/img/project2/gmodstore_rep.png</path>
+            <desc>Here are some of my client reviews!</desc>
+        </img>
+    </section>
+
+
+
+</project2>

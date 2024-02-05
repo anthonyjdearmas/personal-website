@@ -1,0 +1,76 @@
+<project4>
+    <iconImg>/projectData/img/project4/favicon.png</iconImg>
+    <title>SafeServe Metro Full Stack Web Application</title>
+    <dateCompleted>June 2023</dateCompleted>
+    <projectLanguages>Angular 2, NodeJS, Express, MySQL</projectLanguages>
+    <githubURL>https://github.com/anthonyjdearmas/safeservemetro</githubURL>
+
+
+
+    <backgroundTitle>Background</backgroundTitle>
+    <backgroundDesc>
+         My father runs a food safety certification franchise that services New Jersey, Delaware and Pennsylvania. He had expressed to me how difficult it can be
+         processing new customers and getting them the course content to study for the exam they need to pass. Because of these facts, I saw an opportunity to
+        create a web application that would allow customers to sign up for the course, pay for it, and then be able to access the course content.
+        Hence the SafeServe Metro web application was born. I developed this application using the Angular 2 framework for the front end, and NodeJS for the backend.
+        I used MySQL as the database to store all of the customer information and course content. I also used the Square API to handle the payment processing. I then
+        deployed the web apllication to an AWS EC2 instance. To this day there are over 100+ customers that have used the application to sign up for the course! With
+        the processing being fully automated, my father has been able to focus on other aspects of the business. The URL is: https://safeservemetro.com/
+    </backgroundDesc>
+    <backgroundImg>/projectData/img/project4/main.jpg</backgroundImg>
+    <backgroundImgDesc>The first page of the academic paper that I co-authored. You can read the abstract to get a summary of the project.</backgroundImgDesc>
+
+    <learnedTitle>What I learned</learnedTitle>
+    <learnedPts>
+        <pts>How to create and deploy a scalable web application on AWS for real users.</pts>
+        <pts>Domain registration and HTTPS protcol</pts>
+        <pts>User authentication using JSON Web Tokens</pts>
+        <pts>Server side rendering</pts>
+        <pts>SMTP for delivering automatic emails</pts>
+        <pts>How to apply MVC design and S.O.L.I.D princples</pts>
+        <pts>Search engine optimization </pts>
+        <pts>RESTful API design</pts>
+        <pts>Various Amazon Web Services like: RDS, EC2, Route 53</pts>
+        <pts>Connecting other APIs</pts>
+    </learnedPts>
+
+    <section>
+        <title>Project Media</title>
+
+        <img>
+            <path>/projectData/img/project4/account_overview.png</path>
+            <desc>
+                This is what the algorithm output looks like. This represents the quantum circuit that is generated from the sketch.
+                Green check mark means they passed the chapter quiz, yellow means they need improvement and red means they have not taken the quiz yet.
+            </desc>
+        </img>
+
+        <img>
+            <path>/projectData/img/project4/login.png</path>
+            <desc>
+                Login page for the application. Users can login with the access generated from checkout.
+            </desc>
+        </img>
+
+        <img>
+            <path>/projectData/img/project4/contactus.png</path>
+            <desc>
+                The contact us form users can use to send us a message. The email system is handled by the nodemailer package.
+            </desc>
+        </img>
+
+        <img>
+            <path>/projectData/img/project4/coursefinder.png</path>
+            <desc>
+                An online course options tool to help customers find the course that is right for them.
+            </desc>
+        </img>
+
+        <img>
+            <path>/projectData/img/project4/enrollhere.png</path>
+            <desc>
+                The enrollment page where customers can choose the course they want to take and pay for it.
+            </desc>
+        </img>
+    </section>
+</project4>

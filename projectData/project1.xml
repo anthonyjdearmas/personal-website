@@ -1,0 +1,53 @@
+<project1>
+    <iconImg>/projectData/img/project1/assign_logo.png</iconImg>
+    <title>Automated Job Assigner</title>
+    <dateCompleted>May 2019</dateCompleted>
+    <projectLanguages>Python, Kivy</projectLanguages>
+    <githubURL>https://github.com/anthonyjdearmas/Job-Assigner</githubURL>
+
+
+
+    <backgroundTitle>Background</backgroundTitle>
+    <backgroundDesc>
+    This is my first project! At the time, my dorm had a house manager posistion that was in charge of assigning weekly jobs
+    to all of the house mates. I would find the house manager spending a lot of his time on assigning jobs. I knew he
+    could get the job done quicker if he had the right tool. As a result, I decided to use what I learned from my first
+    Computer Science course at Cornell and design a job assigner program using Python. The house manager was able to use
+    my program to quickly generate job assignments and save himself plenty of time to do other things!
+    </backgroundDesc>
+    <backgroundImg>/projectData/img/project1/main_menu.png</backgroundImg>
+    <backgroundImgDesc>The main menu of the application. You can either configure settings, go to my GitHub or create job assignments here.</backgroundImgDesc>
+
+    <learnedTitle>What I learned</learnedTitle>
+    <learnedPts>
+        <pts>How to create a GUI using Kivy and Python</pts>
+        <pts>Basic data management</pts>
+        <pts>Applications of important data structures (lists and dictionaries)</pts>
+        <pts>Threading</pts>
+    </learnedPts>
+
+    <section>
+        <title>Project Media</title>
+
+        <img>
+            <path>/projectData/img/project1/config_page.png</path>
+            <desc>
+                Here is an example of what it is like to add or remove a person. The same happens for a job!
+            </desc>
+        </img>
+
+        <img>
+            <path>/projectData/img/project1/add_element.png</path>
+            <desc>
+                Job Description: Modify his existing code to add a skill system that allows players to level up and gain new abilities.
+            </desc>
+        </img>
+
+        <img>
+            <path>/projectData/img/project1/excl_expt.png</path>
+            <desc>
+                Here are what exported assignments look like.
+            </desc>
+        </img>
+    </section>
+</project1>

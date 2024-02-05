@@ -1,0 +1,55 @@
+<project3>
+    <iconImg>/projectData/img/project3/research_icon.png</iconImg>
+    <title>University Research: Notational Programming Language for Quantum Circuits</title>
+    <dateCompleted>2022 Spring Semester</dateCompleted>
+    <projectLanguages>Python, Tensorflow</projectLanguages>
+    <academicPaper>https://github.com/anthonyjdearmas/notate_academic_paper</academicPaper>
+
+
+
+    <backgroundTitle>Background</backgroundTitle>
+    <backgroundDesc>
+         I participated in research during my senior year. We worked on a project called Notate. Notate is a Python-based 
+         sketch interpreter library providing basic utilities to preprocess, segment and classify drawings.
+         It also provides and connects to interactive UIs for drawing in the browser on pen-based tablets. Some applications 
+         include collecting handwritten data, exploring sketch interpretation algorithms, or as the foundation for drawing 
+         interfaces running on web-based platforms. Notate's main goal is to support the democratization and integration of 
+         pen-based computing into more traditional web and GUI experiences.
+    </backgroundDesc>
+    <backgroundImg>/projectData/img/project3/main.png</backgroundImg>
+    <backgroundImgDesc>The first page of the academic paper that I co-authored. You can read the abstract to get a summary of the project.</backgroundImgDesc>
+
+    <learnedTitle>What I learned</learnedTitle>
+    <learnedPts>
+        <pts>Applications of convolutional neural networks</pts>
+        <pts>Core computer vision concepts: intersection detection, gaussian filtering, equidistant resampling</pts>
+        <pts>Quantum circuits</pts>
+        <pts>Human computer interaction development cycle</pts>
+        <pts>How to perform university level academic research</pts>
+    </learnedPts>
+
+    <section>
+        <title>Project Media</title>
+
+        <img>
+            <path>/projectData/img/project3/sketch-to-graph.png</path>
+            <desc>
+                Here is an example of what the Notate library can do. It can take a sketch and convert it into a graph.
+            </desc>
+        </img>
+
+        <img>
+            <path>/projectData/img/project3/algo_output.png</path>
+            <desc>
+                This is what the algorithm output looks like. This represents the quantum circuit that is generated from the sketch.
+            </desc>
+        </img>
+
+        <img>
+            <path>/projectData/img/project3/notation.png</path>
+            <desc>
+                This is the notation that we developed for the computer vision algorithm to interpret.
+            </desc>
+        </img>
+    </section>
+</project3>
