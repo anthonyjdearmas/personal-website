@@ -124,7 +124,7 @@ const Home: FC<HomeProps> = () => (
           <p>
             Beyond my 9-to-5 role, I channel my enthusiasm into personal projects. A recent endeavor is an online food
             safety training website. Users can study, track progress, and attain certification, showcasing my belief
-            in technology's practical applications. You can visit it here: <a href="https://safeservemetro.com/" target="_blank">SafeServe Metro</a>
+            in technology's practical applications. You can visit it here: <a href="https://safeservemetro.com/" target="_blank">SafeServe Metro</a>.
             This has been my biggest project by far. It has been a great learning experience and I am proud of the result. The course has
             increased the pass rate of the exam signicantly and brought many more customers to the business that uses it.
             Seeing the impact of my work has been very rewarding and motivates me to continue to create.
