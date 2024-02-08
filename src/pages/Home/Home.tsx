@@ -20,7 +20,7 @@ const Home: FC<HomeProps> = () => (
               <div className="container text-center" style={{ height: '100px' }}>
                 <div className="row">
                   <div>
-                    <Link to="https://www.linkedin.com/in/anthonyjdearmas/" target="_blank">
+                    <Link to="https://github.com/anthonyjdearmas" target="_blank">
                       <img id="icon-git" className="img-fluid mt-3 icon" src="img/icons/github.png" alt="GitHub Icon" />
                     </Link>
 
@@ -52,14 +52,13 @@ const Home: FC<HomeProps> = () => (
               <h2 id="intro_title_mobile">Welcome,</h2>
               <p id="intro_text_mobile">
                 My name is Anthony DeArmas  and I'm a full stack software engineer based in New York City.
-                I'm passionate about creating web applications that is both intuitive and efficient.
                 Here you can find some of my projects and learn more about me. Click the icons below to
                 visit my GitHub and LinkedIn profiles, or click the resume icon to view my resume.
               </p>
               <div className="container text-center" style={{ height: '100px' }}>
                 <div className="row">
                   <div>
-                    <Link to="https://www.linkedin.com/in/anthonyjdearmas/" target="_blank">
+                    <Link to="https://github.com/anthonyjdearmas" target="_blank">
                       <img id="icon-git" className="img-fluid mt-3 icon_mobile" src="img/icons/github.png" alt="GitHub Icon" />
                     </Link>
 
@@ -106,9 +105,16 @@ const Home: FC<HomeProps> = () => (
             The project later became funded by Cornell e-Labs and continues to grow today. It can be visited at:
             <a href="https://ai-learners.com/" target="_blank"> AI-Learners</a>
           </p>
+          <h3><i>Making the Most of University</i></h3>
+          <p>
+            During my time at Cornell, I wanted to make sure I took advantage of the academic opportunities available to me.
+            I became a teaching assistant for a HCI course where I had my own office hours section where I taught
+            a class of 45 students. I also co-authored a paper and helped ran studies with the research. The paper was
+            published to the ACM Digital Library and even won an award.
+          </p>
           <h3><i>Internship to Full-Time Role at FTI Consulting</i></h3>
           <p>
-            During my junior year I interned at FTI Consulting, where I learned to become a professional software engineer.
+            I also interned at FTI Consulting, where I learned to become a professional software engineer.
             There I learned in leaps and bounds about the software development process and how to work with modern technologies.
             I was later offered a full-time role as a software engineer after graduation and am currently working there.
             Now I am part of multiple projects at the same time, communicate with clients and am growing into a better developer
