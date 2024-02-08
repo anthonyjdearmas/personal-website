@@ -35,6 +35,8 @@ const Projects: React.FC<ProjectsProps> = () => {
   }, []);
 
   const handleAccordionItemClick = () => {
+    if (window.innerWidth < 800) return;
+
     window.scrollTo(0, window.innerHeight * 0.25);
   };
 
