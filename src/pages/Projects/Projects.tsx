@@ -24,7 +24,7 @@ const Projects: React.FC<ProjectsProps> = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       let projects: any = [];
-      for (let i = 1; i < 6; i++) {
+      for (let i = 1; i < 7; i++) {
         projects.push(getXMLData(`project${i}`));
       }
       const results = await Promise.all(projects);

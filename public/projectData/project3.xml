@@ -1,52 +1,54 @@
 <project3>
-    <iconImg>/projectData/img/project1/assign_logo.png</iconImg>
-    <title>AI-Learners Learn Platform Full Stack Web Application</title>
-    <dateCompleted>May 2019</dateCompleted>
-    <projectLanguages>Python, Kivy</projectLanguages>
-    <productionURL>https://github.com/anthonyjdearmas/Job-Assigner</productionURL>
+    <iconImg>/projectData/img/project3/icon.png</iconImg>
+    <title>AI-Learners Special Needs Children Learning Platform</title>
+    <dateCompleted>Summer 2020</dateCompleted>
+    <projectLanguages>Typescript, NoSQL (Firebase), Python</projectLanguages>
+    <productionURL>https://ai-learners.com/</productionURL>
 
 
 
     <backgroundTitle>Background</backgroundTitle>
     <backgroundDesc>
-    This is my first project! At the time, my dorm had a house manager posistion that was in charge of assigning weekly jobs
-    to all of the house mates. I would find the house manager spending a lot of his time on assigning jobs. I knew he
-    could get the job done quicker if he had the right tool. As a result, I decided to use what I learned from my first
-    Computer Science course at Cornell and design a job assigner program using Python. The house manager was able to use
-    my program to quickly generate job assignments and save himself plenty of time to do other things!
+    The founder, Adele, had created a post on Cornell University's subreddit looking for other Cornell students to help her develop a
+    learning platform for special needs children. I was interested in the project and reached out to her. We had a meeting and I
+    was brought on to the team. The platform was to be a web application that would use machine learning to help children learn
+    better. The platform would be able to detect the child's emotions and adjust the learning material accordingly. The project
+    was worked on by myself and 3 other students. I was a lead developer at the time and was responsible for improving the 
+    front-end and back-end. The project eventually gained even more traction after I left and became a fully funded startup by
+    Cornell e-labs and Life Changing Labs. Here is a video of the project: https://youtu.be/fVuSQQCCumA
     </backgroundDesc>
-    <backgroundImg>/projectData/img/project1/main_menu.png</backgroundImg>
-    <backgroundImgDesc>The main menu of the application. You can either configure settings, go to my GitHub or create job assignments here.</backgroundImgDesc>
+    <backgroundImg>/projectData/img/project3/background.png</backgroundImg>
+    <backgroundImgDesc>Here is the home page of the website. Visitors can try out demo games and read more about it.</backgroundImgDesc>
 
     <learnedTitle>What I learned</learnedTitle>
     <learnedPts>
-        <pts>How to create a GUI using Kivy and Python</pts>
-        <pts>Basic data management</pts>
-        <pts>Applications of important data structures (lists and dictionaries)</pts>
-        <pts>Threading</pts>
+        <pts>How to lead a project team with other students</pts>
+        <pts>End to end software development</pts>
+        <pts>Applications of NoSQL database systems</pts>
+        <pts>Fine tuning machine learning models using customized data sets</pts>
     </learnedPts>
 
     <section>
         <title>Project Media</title>
 
         <img>
-            <path>/projectData/img/project1/config_page.png</path>
+            <path>/projectData/img/project3/avatar_creation.png</path>
             <desc>
-                Here is an example of what it is like to add or remove a person. The same happens for a job!
+                Users are able to create their own avatars to make the learning experience more personal.
             </desc>
         </img>
 
         <img>
-            <path>/projectData/img/project1/add_element.png</path>
+            <path>/projectData/img/project3/different_game_options.png</path>
             <desc>
-                Job Description: Modify his existing code to add a skill system that allows players to level up and gain new abilities.
+                Here are some of the games that the platform offers. Each game is designed to help children learn in a different way.
             </desc>
         </img>
 
         <img>
-            <path>/projectData/img/project1/excl_expt.png</path>
+            <path>/projectData/img/project3/pregame_selection.png</path>
             <desc>
-                Here are what exported assignments look like.
+                Accessability features are available for children with different needs.
             </desc>
         </img>
     </section>
