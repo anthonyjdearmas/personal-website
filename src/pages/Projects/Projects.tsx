@@ -34,10 +34,18 @@ const Projects: React.FC<ProjectsProps> = () => {
     fetchProjects();
   }, []);
 
-  const handleAccordionItemClick = () => {
+  const handleAccordionItemClick = (event: any) => {
     if (window.innerWidth < 800) return;
 
-    window.scrollTo(0, window.innerHeight * 0.25);
+    const clickedItem = event.target.closest('.accordion-item');
+    if (clickedItem) {
+      setTimeout(() => {
+        window.scrollTo({
+          top: clickedItem.getBoundingClientRect().top + window.scrollY,
+          behavior: 'smooth'
+        });
+      }, 250);
+    }
   };
 
   return (
