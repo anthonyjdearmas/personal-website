@@ -1,6 +1,6 @@
 <project3>
     <iconImg>/projectData/img/project3/icon.png</iconImg>
-    <title>AI-Learners Special Needs Children Learning Platform</title>
+    <title>AI-Learners Special Needs Children's Learning Platform</title>
     <dateCompleted>Summer 2020</dateCompleted>
     <projectLanguages>Typescript, NoSQL (Firebase), Python</projectLanguages>
     <productionURL>https://ai-learners.com/</productionURL>
