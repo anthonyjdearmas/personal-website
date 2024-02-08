@@ -24,7 +24,7 @@ const Projects: React.FC<ProjectsProps> = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       let projects: any = [];
-      for (let i = 1; i < 10; i++) {
+      for (let i = 1; i < 6; i++) {
         projects.push(getXMLData(`project${i}`));
       }
       const results = await Promise.all(projects);
@@ -76,6 +76,12 @@ const Projects: React.FC<ProjectsProps> = () => {
                           {project.academicPaper && (
                             <a href={project.academicPaper} target="_blank" rel="noopener noreferrer" className="academic_url">
                               <strong>Full Academic Paper</strong>
+                            </a>
+                          )}
+
+                          {project.productionURL && (
+                            <a href={project.productionURL} target="_blank" rel="noopener noreferrer" className="prod_url">
+                              <strong>Production URL</strong>
                             </a>
                           )}
                         </div>

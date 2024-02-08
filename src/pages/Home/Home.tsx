@@ -13,8 +13,7 @@ const Home: FC<HomeProps> = () => (
             <div id="textbox" className="p-3 rounded">
               <h2 id="intro_title">Welcome,</h2>
               <p id="intro_text">
-                My name is Anthony DeArmas  and I'm a full stack software engineer based in New York City.
-                I'm passionate about creating web applications that is both intuitive and efficient.
+                My name is Anthony DeArmas and I'm a full stack software engineer based in New York City.
                 Here you can find some of my projects and learn more about me. Click the icons below to
                 visit my GitHub and LinkedIn profiles, or click the resume icon to view my resume.
               </p>

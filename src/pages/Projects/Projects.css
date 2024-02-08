@@ -62,6 +62,11 @@
     font-size: 20px;
 }
 
+.prod_url {
+    color: #ffffff;
+    font-size: 20px;
+}
+
 #video_wrapper {
     width: auto;
     height: auto;

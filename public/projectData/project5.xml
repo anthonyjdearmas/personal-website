@@ -1,49 +1,75 @@
 <project5>
-    <iconImg>/projectData/img/project5/icon.png</iconImg>
-    <title>Advanced Webscraper for Food Business Data</title>
-    <dateCompleted>December 2024</dateCompleted>
-    <projectLanguages>Python, Selenium</projectLanguages>
-    <githubURL>https://github.com/anthonyjdearmas/pa_business_webscraper</githubURL>
+    <iconImg>/projectData/img/project5/favicon.png</iconImg>
+    <title>SafeServe Metro Full Stack Web Application</title>
+    <dateCompleted>June 2023</dateCompleted>
+    <projectLanguages>Angular 2, NodeJS, Express, MySQL</projectLanguages>
+    <githubURL>https://github.com/anthonyjdearmas/safeservemetro</githubURL>
 
 
 
     <backgroundTitle>Background</backgroundTitle>
     <backgroundDesc>
-    With SafeServe Metro completed, I thought it would be a good idea to create a webscraper that would gather data from Pennsylvania's
-    Department of Agriculture's website to see which busineses have an expired food safety certificate. This would help connect customer's who
-    are in need of a food safety certificate with the website that I created. However, the website uses Microsoft's ASP.NET framework which makes
-    it difficult to scrape data from. I had to use Selenium to automate the process of clicking through the website and gathering the data.
-    In addition, the only way to determine if a company has an expired certificate is to analyze the inspectors' comments. Each inspector uses
-    different wording to describe an expired certificate. To get around this I created a small dictionary of REGEX expressions that would
-    match the inspector's comments to determine if a company has an expired certificate. The program is fully configurable to make it easy
-    for anyone to run it. You can choose the time frame to scrape from along with which counties you want to scrape. With this, I was able 
-    to gather data from over 500 businesses in Pennsylvania and determine which ones have an expired certificate.
+         My father runs a food safety certification franchise that services New Jersey, Delaware and Pennsylvania. He had expressed to me how difficult it can be
+         processing new customers and getting them the course content to study for the exam they need to pass. Because of these facts, I saw an opportunity to
+        create a web application that would allow customers to sign up for the course, pay for it, and then be able to access the course content.
+        Hence the SafeServe Metro web application was born. I developed this application using the Angular 2 framework for the front end, and NodeJS for the backend.
+        I used MySQL as the database to store all of the customer information and course content. I also used the Square API to handle the payment processing. I then
+        deployed the web apllication to an AWS EC2 instance. To this day there are over 100+ customers that have used the application to sign up for the course! With
+        the processing being fully automated, my father has been able to focus on other aspects of the business. The URL is: https://safeservemetro.com/
     </backgroundDesc>
-    <backgroundImg></backgroundImg>
-    <backgroundImgDesc></backgroundImgDesc>
+    <backgroundImg>/projectData/img/project5/main.jpg</backgroundImg>
+    <backgroundImgDesc>A snapshot of the homepage that customers see when they first visit the website.</backgroundImgDesc>
 
     <learnedTitle>What I learned</learnedTitle>
     <learnedPts>
-        <pts>How data is processed in ASP .NET web applications</pts>
-        <pts>Advanced web scraping techniques</pts>
-        <pts>Synchronization</pts>
-        <pts>Pattern recognition using REGEX</pts>
+        <pts>How to create and deploy a scalable web application on AWS for real users.</pts>
+        <pts>Domain registration and HTTPS protcol</pts>
+        <pts>User authentication using JSON Web Tokens</pts>
+        <pts>Server side rendering</pts>
+        <pts>SMTP for delivering automatic emails</pts>
+        <pts>How to apply MVC design and S.O.L.I.D princples</pts>
+        <pts>Search engine optimization </pts>
+        <pts>RESTful API design</pts>
+        <pts>Various Amazon Web Services like: RDS, EC2, Route 53</pts>
+        <pts>Connecting other APIs</pts>
     </learnedPts>
 
     <section>
         <title>Project Media</title>
 
-        <mp4>
-            <path>/projectData/img/project5/scraper_demo.mp4</path>
+        <img>
+            <path>/projectData/img/project5/account_overview.png</path>
             <desc>
-                Here is a demo of the webscraper in action. It is fully automated and can be configured to scrape any county in Pennsylvania.
+                This is what the algorithm output looks like. This represents the quantum circuit that is generated from the sketch.
+                Green check mark means they passed the chapter quiz, yellow means they need improvement and red means they have not taken the quiz yet.
             </desc>
-        </mp4>
+        </img>
 
         <img>
-            <path>/projectData/img/project5/patterns.png</path>
+            <path>/projectData/img/project5/login.png</path>
             <desc>
-                The patterns that I used to determine if a company has an expired certificate.
+                Login page for the application. Users can login with the access generated from checkout.
+            </desc>
+        </img>
+
+        <img>
+            <path>/projectData/img/project5/contactus.png</path>
+            <desc>
+                The contact us form users can use to send us a message. The email system is handled by the nodemailer package.
+            </desc>
+        </img>
+
+        <img>
+            <path>/projectData/img/project5/coursefinder.png</path>
+            <desc>
+                An online course options tool to help customers find the course that is right for them.
+            </desc>
+        </img>
+
+        <img>
+            <path>/projectData/img/project5/enrollhere.png</path>
+            <desc>
+                The enrollment page where customers can choose the course they want to take and pay for it.
             </desc>
         </img>
     </section>
