@@ -108,12 +108,12 @@ const Projects: React.FC<ProjectsProps> = () => {
 
                     {project.section.map((section_part: any, index: number) => {
                       return (
-                        <div>
+                        <div key={'section_' + index}>
                           <h2 className='mt-5'>{section_part.title}</h2>
 
                           {section_part.mp4 && section_part.mp4.map((section_mp4: any, subIndex: number) => {
                             return (
-                              <div className="text-center mt-5">
+                              <div className="text-center mt-5" key={'subsection_' + subIndex}>
                                 <video autoPlay loop controls={true} id="video_wrapper">
                                   <source src={require('./projectVideos/webscraping.mp4')} type="video/ogg" />
                                   Your browser does not support the video tag.
@@ -125,7 +125,7 @@ const Projects: React.FC<ProjectsProps> = () => {
 
                           {section_part.img.map((section_img: any, subIndex: number) => {
                             return (
-                              <div className="text-center mt-5">
+                              <div className="text-center mt-5" key={'section_img_' + subIndex}>
                                 <img className="img-fluid" src={section_img.path} alt={section_img.path} />
                                 <h6 className="pt-3">{section_img.desc}</h6>
                               </div>
