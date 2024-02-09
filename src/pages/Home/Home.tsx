@@ -100,14 +100,14 @@ const Home: FC<HomeProps> = () => (
           </p>
           <h3><i>Collaborating with Other Students</i></h3>
           <p>
-            Over the summer of my sophmore year, I became part of a project named AI-Learners. This project was a collaboration
+            Over the summer of my sophomore year, I became part of a project named AI-Learners. This project was a collaboration
             with other Cornell students where I led a small team to develop a web application to help children with special needs learn.
             The project later became funded by Cornell e-Labs and continues to grow today. It can be visited at:
             <a href="https://ai-learners.com/" target="_blank"> AI-Learners</a>
           </p>
           <h3><i>Making the Most of University</i></h3>
           <p>
-            During my time at Cornell, I wanted to make sure I took advantage of the academic opportunities available to me.
+            Before I left university, I wanted to make sure I took advantage of the academic opportunities available to me.
             I became a teaching assistant for a HCI course where I had my own office hours section where I taught
             a class of 45 students. I also co-authored a paper and helped ran studies with the research. The paper was
             published to the ACM Digital Library and even won an award.
@@ -126,7 +126,7 @@ const Home: FC<HomeProps> = () => (
             safety training website. Users can study, track progress, and attain certification, showcasing my belief
             in technology's practical applications. You can visit it here: <a href="https://safeservemetro.com/" target="_blank">SafeServe Metro</a>.
             This has been my biggest project by far. It has been a great learning experience and I am proud of the result. The course has
-            increased the pass rate of the exam signicantly and brought many more customers to the business that uses it.
+            increased the pass rate of the exam significantly and brought many more customers to the business that uses it.
             Seeing the impact of my work has been very rewarding and motivates me to continue to create.
           </p>
         </div>
