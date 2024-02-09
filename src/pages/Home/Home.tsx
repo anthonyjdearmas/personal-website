@@ -103,7 +103,7 @@ const Home: FC<HomeProps> = () => (
             Over the summer of my sophomore year, I became part of a project named AI-Learners. This project was a collaboration
             with other Cornell students where I led a small team to develop a web application to help children with special needs learn.
             The project later became funded by Cornell e-Labs and continues to grow today. It can be visited at:
-            <a href="https://ai-learners.com/" target="_blank"> AI-Learners</a>
+            <a href="https://ai-learners.com/" target="_blank"> AI-Learners</a>.
           </p>
           <h3><i>Making the Most of University</i></h3>
           <p>
